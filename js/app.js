@@ -37,6 +37,6 @@ function pushToDOM(input) {
   imageUrls.forEach(function (image) {
     var src = image.images.fixed_height.url;
     var container = document.querySelector(".js-container");
-    container.innerHTML += '<img src="' + src + '">';
+    container.innerHTML += '<img src="' + src + '" loading="lazy">';
   });
 }
